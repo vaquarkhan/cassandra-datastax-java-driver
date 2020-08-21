@@ -32,6 +32,7 @@ public class CassandraConfig {
         .withPort(port)
         .withClusterName(clusterName)
         .withCredentials("username", "password")
+        .withoutJMXReporting()//Spring and driver  conflix resolved
         .build();
   }
 
