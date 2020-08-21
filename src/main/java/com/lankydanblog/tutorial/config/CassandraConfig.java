@@ -31,6 +31,7 @@ public class CassandraConfig {
         .addContactPoint(host)
         .withPort(port)
         .withClusterName(clusterName)
+        .withCredentials("username", "password")
         .build();
   }
 
